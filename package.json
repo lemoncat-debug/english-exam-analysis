@@ -1,0 +1,1 @@
+{"name":"kaoyan-english-study","version":"1.0.0","private":true,"scripts":{"check":"node scripts/verify.mjs","test:ocr":"node scripts/verify-ocr.cjs"},"dependencies":{"tesseract.js":"6.0.1"}}

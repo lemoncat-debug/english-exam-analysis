@@ -1,0 +1,1002 @@
+[
+  {
+    "id": 1,
+    "passage": 0,
+    "answer": "D",
+    "picked": "B",
+    "text": "Choose the best word(s) for blank 1.",
+    "zh": "被世卫组织认定的全球性流行病",
+    "options": [
+      "criticized",
+      "appointed",
+      "commented",
+      "designated"
+    ],
+    "optionsZh": [
+      "批评",
+      "任命",
+      "评论",
+      "认定、指定"
+    ],
+    "reason": "epidemic与designated构成被动关系，后面的by the World Health Organization说明认定者。",
+    "trap": "appointed一般用于任命人员担任职务；criticized与commented不表达宣布疫情性质，comment还常需介词on。",
+    "tip": "先看空格修饰的名词，再判断动词与该名词能否搭配。",
+    "evidence": "first worldwide",
+    "refPage": 1
+  },
+  {
+    "id": 2,
+    "passage": 0,
+    "answer": "C",
+    "picked": "A",
+    "text": "Choose the best word(s) for blank 2.",
+    "zh": "提高警戒级别与紧急会议的先后关系",
+    "options": [
+      "proceeded",
+      "activated",
+      "followed",
+      "prompted"
+    ],
+    "optionsZh": [
+      "继续、进行",
+      "激活",
+      "在……之后发生",
+      "促使"
+    ],
+    "reason": "主语是heightened alert；提高警戒级别发生在专家开会之后，followed表示“随后发生”。",
+    "trap": "proceed是不及物用法为主，不能在这里直接接会议表示发生在其后；prompted会颠倒文中会议与警戒升级的先后关系；activated不搭配meeting。",
+    "tip": "先用中文排列事件顺序，再把主语代回动词。",
+    "evidence": "heightened alert",
+    "refPage": 2
+  },
+  {
+    "id": 3,
+    "passage": 0,
+    "answer": "B",
+    "picked": "B",
+    "text": "Choose the best word(s) for blank 3.",
+    "zh": "病例数量上升",
+    "options": [
+      "digits",
+      "numbers",
+      "amounts",
+      "sums"
+    ],
+    "optionsZh": [
+      "数字、数位",
+      "数量",
+      "数量、总量",
+      "金额、总和"
+    ],
+    "reason": "前面是cases，后面用numbers承接可数的病例数；rising numbers表示数量上升。",
+    "trap": "digits指0—9等数字符号；amounts通常搭配不可数名词；sums常表示金额或总和。",
+    "tip": "数字类选项要区分“数字符号”和“事物的数量”。",
+    "evidence": "heightened alert",
+    "refPage": 2
+  },
+  {
+    "id": 4,
+    "passage": 0,
+    "answer": "A",
+    "picked": "C",
+    "text": "Choose the best word(s) for blank 4.",
+    "zh": "疫情的严重程度如何",
+    "options": [
+      "moderate",
+      "normal",
+      "unusual",
+      "extreme"
+    ],
+    "optionsZh": [
+      "温和的、适度的",
+      "正常的",
+      "不寻常的",
+      "极端的"
+    ],
+    "reason": "But与前文疫情警报构成转折，后面又说症状轻微、完全康复，因此严重程度属moderate。",
+    "trap": "unusual没有回答严重程度；extreme与mild symptoms矛盾；normal也不如moderate准确地描述严重程度。",
+    "tip": "用后文的症状与结果反推前面的评价词。",
+    "evidence": "overwhelming majority",
+    "refPage": 3
+  },
+  {
+    "id": 5,
+    "passage": 0,
+    "answer": "A",
+    "picked": "C",
+    "text": "Choose the best word(s) for blank 5.",
+    "zh": "补充说明患者的状况",
+    "options": [
+      "with",
+      "in",
+      "from",
+      "by"
+    ],
+    "optionsZh": [
+      "随着、在……情况下",
+      "在……之中",
+      "来自",
+      "通过、被"
+    ],
+    "reason": "with + the overwhelming majority of patients + experiencing构成with复合结构，补充说明多数患者的情况。",
+    "trap": "from不构成这里的名词加分词补充结构；in和by也不能自然接出句中这个结构。",
+    "tip": "看到“名词 + 现在分词”，检查是否需要with复合结构。",
+    "evidence": "overwhelming majority",
+    "refPage": 3
+  },
+  {
+    "id": 6,
+    "passage": 0,
+    "answer": "B",
+    "picked": "B",
+    "text": "Choose the best word(s) for blank 6.",
+    "zh": "没有医疗处理时也能康复",
+    "options": [
+      "progress",
+      "absence",
+      "presence",
+      "favor"
+    ],
+    "optionsZh": [
+      "进展",
+      "缺乏、不存在",
+      "存在",
+      "支持、赞同"
+    ],
+    "reason": "in the absence of意为“在没有……的情况下”，呼应症状轻微且完全康复。",
+    "trap": "presence方向相反；in favor of表示支持；progress不适合这一固定搭配。",
+    "tip": "将固定短语作为整体记忆：in the absence of。",
+    "evidence": "overwhelming majority",
+    "refPage": 3
+  },
+  {
+    "id": 7,
+    "passage": 0,
+    "answer": "D",
+    "picked": "B",
+    "text": "Choose the best word(s) for blank 7.",
+    "zh": "疫情引起全球关注",
+    "options": [
+      "reality",
+      "phenomenon",
+      "concept",
+      "notice"
+    ],
+    "optionsZh": [
+      "现实",
+      "现象",
+      "概念",
+      "注意、关注"
+    ],
+    "reason": "come to someone's notice表示引起某人的注意，global notice在这里指全球关注。",
+    "trap": "phenomenon虽然与疫情语义相关，却不能组成came to global phenomenon；reality和concept同样不符合此处搭配。",
+    "tip": "不要只选话题相关词，还要把前后介词组成完整搭配。",
+    "evidence": "came to global",
+    "refPage": 4
+  },
+  {
+    "id": 8,
+    "passage": 0,
+    "answer": "C",
+    "picked": "C",
+    "text": "Choose the best word(s) for blank 8.",
+    "zh": "健康成年人中出现住院和死亡病例",
+    "options": [
+      "over",
+      "for",
+      "among",
+      "to"
+    ],
+    "optionsZh": [
+      "在……上方",
+      "为了",
+      "在……之中",
+      "到、向"
+    ],
+    "reason": "among引出病例发生的人群：在原本健康的成年人当中。",
+    "trap": "over、for和to均不能在这里表达群体内部发生病例的关系。",
+    "tip": "先识别空后是地点、原因还是人群。",
+    "evidence": "hospitalizations and deaths",
+    "refPage": 4
+  },
+  {
+    "id": 9,
+    "passage": 0,
+    "answer": "B",
+    "picked": "B",
+    "text": "Choose the best word(s) for blank 9.",
+    "zh": "病例开始在其他地方出现",
+    "options": [
+      "stay up",
+      "crop up",
+      "fill up",
+      "cover up"
+    ],
+    "optionsZh": [
+      "熬夜",
+      "突然出现",
+      "填满",
+      "掩盖"
+    ],
+    "reason": "crop up意为出现、冒出，主语是cases，表示病例在多地开始出现。",
+    "trap": "stay up意为熬夜；fill up是装满；cover up是掩盖，均不合病例出现的语境。",
+    "tip": "将不熟悉的短语放进“主语 + 动作”的简单句。",
+    "evidence": "cases began",
+    "refPage": 4
+  },
+  {
+    "id": 10,
+    "passage": 0,
+    "answer": "A",
+    "picked": "A",
+    "text": "Choose the best word(s) for blank 10.",
+    "zh": "随着天气转暖病例减少",
+    "options": [
+      "as",
+      "if",
+      "unless",
+      "until"
+    ],
+    "optionsZh": [
+      "随着、当……时",
+      "如果",
+      "除非",
+      "直到"
+    ],
+    "reason": "as引导时间状语从句，表示天气转暖的同时，新病例似乎逐渐减少。",
+    "trap": "if和unless引入假设，而原文叙述已发生情况；until表示持续到某时，不如as贴合伴随变化。",
+    "tip": "两个变化同时推进时留意as表示“随着”。",
+    "evidence": "warmer weather",
+    "refPage": 4
+  },
+  {
+    "id": 11,
+    "passage": 0,
+    "answer": "C",
+    "picked": "B",
+    "text": "Choose the best word(s) for blank 11.",
+    "zh": "几乎各州都有明显的流感活动",
+    "options": [
+      "excessive",
+      "enormous",
+      "significant",
+      "magnificent"
+    ],
+    "optionsZh": [
+      "过度的",
+      "巨大的",
+      "显著的",
+      "壮丽的、极好的"
+    ],
+    "reason": "significant flu activity指明显、显著的流感活动，与前面的seemed to fade形成反差。",
+    "trap": "enormous常强调体量极大；excessive含超出适当限度的评价；magnificent带褒义，均不如此处significant贴切。",
+    "tip": "程度词既要看强弱，也要看名词搭配与褒贬。",
+    "evidence": "officials reported",
+    "refPage": 5
+  },
+  {
+    "id": 12,
+    "passage": 0,
+    "answer": "D",
+    "picked": "D",
+    "text": "Choose the best word(s) for blank 12.",
+    "zh": "被检测的是什么",
+    "options": [
+      "categories",
+      "examples",
+      "patterns",
+      "samples"
+    ],
+    "optionsZh": [
+      "类别",
+      "例子",
+      "模式",
+      "样本"
+    ],
+    "reason": "tested修饰空格处的名词，医学检测的对象是samples，即样本。",
+    "trap": "examples是用于举例的例子，patterns是模式，categories是分类，都不指送检样本。",
+    "tip": "利用后置修饰语tested缩小名词范围。",
+    "evidence": "virtually all",
+    "refPage": 5
+  },
+  {
+    "id": 13,
+    "passage": 0,
+    "answer": "D",
+    "picked": "D",
+    "text": "Choose the best word(s) for blank 13.",
+    "zh": "病毒对一百多万人造成了什么",
+    "options": [
+      "imparted",
+      "immersed",
+      "injected",
+      "infected"
+    ],
+    "optionsZh": [
+      "传授",
+      "使沉浸",
+      "注射",
+      "感染"
+    ],
+    "reason": "主语it指新型猪流感，动作对象为people，后面并列死亡和住院，故为infected。",
+    "trap": "injected表示注射，需要合适的注射者与内容；imparted和immersed与传播疾病不符。",
+    "tip": "近形词不要只看拼写，先看动作发出者与接受者。",
+    "evidence": "one million",
+    "refPage": 5
+  },
+  {
+    "id": 14,
+    "passage": 0,
+    "answer": "A",
+    "picked": "A",
+    "text": "Choose the best word(s) for blank 14.",
+    "zh": "从国家储备中调拨药物",
+    "options": [
+      "released",
+      "relayed",
+      "relieved",
+      "remained"
+    ],
+    "optionsZh": [
+      "发放、释放",
+      "转达",
+      "缓解",
+      "保持、留下"
+    ],
+    "reason": "released表示把储备中的药物发放出来，from the national stockpile明确了药物来源。",
+    "trap": "relayed是转达；relieved是缓解；remained通常不及物，不能直接支配Tamiflu。",
+    "tip": "介词from常提示“从某处调出或放出”的动作。",
+    "evidence": "Federal health officials",
+    "refPage": 5
+  },
+  {
+    "id": 15,
+    "passage": 0,
+    "answer": "C",
+    "picked": "D",
+    "text": "Choose the best word(s) for blank 15.",
+    "zh": "开始接受各州的疫苗订单",
+    "options": [
+      "placing",
+      "delivering",
+      "taking",
+      "giving"
+    ],
+    "optionsZh": [
+      "下达、放置",
+      "递送",
+      "接受、接收",
+      "给予"
+    ],
+    "reason": "take orders表示接受订单；from the states说明订单来自各州，联邦部门是接单方。",
+    "trap": "place orders是订货方下单；deliver偏递送；give orders常指发布命令，角色与语境不符。",
+    "tip": "做搭配题前先分清谁下单、谁接单。",
+    "evidence": "orders from the states",
+    "refPage": 5
+  },
+  {
+    "id": 16,
+    "passage": 0,
+    "answer": "B",
+    "picked": "B",
+    "text": "Choose the best word(s) for blank 16.",
+    "zh": "新疫苗提前可以供应",
+    "options": [
+      "feasible",
+      "available",
+      "reliable",
+      "applicable"
+    ],
+    "optionsZh": [
+      "可行的",
+      "可获得的、可供应的",
+      "可靠的",
+      "适用的"
+    ],
+    "reason": "available说明疫苗已经可以供应，ahead of expectations说明比预期更早。后一句made available也形成词汇复现。",
+    "trap": "feasible描述计划能否实施；reliable描述可靠程度；applicable描述适用性，都不直接表达供应时间。",
+    "tip": "关注邻句中的同词复现与供应、时间等语义线索。",
+    "evidence": "ahead of expectations",
+    "refPage": 6
+  },
+  {
+    "id": 17,
+    "passage": 0,
+    "answer": "D",
+    "picked": "B",
+    "text": "Choose the best word(s) for blank 17.",
+    "zh": "最初供应的那一批疫苗",
+    "options": [
+      "prevalent",
+      "principal",
+      "innovative",
+      "initial"
+    ],
+    "optionsZh": [
+      "流行的",
+      "主要的",
+      "创新的",
+      "最初的"
+    ],
+    "reason": "early October说明首次供应的时间，those initial doses指最初供应的这批剂量。",
+    "trap": "principal表示主要，但这里区分的是先后批次；prevalent和innovative也不体现时间。",
+    "tip": "看到early、first、then等信息，检查是否考时间顺序。",
+    "evidence": "More than three million",
+    "refPage": 6
+  },
+  {
+    "id": 18,
+    "passage": 0,
+    "answer": "C",
+    "picked": "C",
+    "text": "Choose the best word(s) for blank 18.",
+    "zh": "这种鼻喷疫苗不建议用于某些人群",
+    "options": [
+      "presented",
+      "restricted",
+      "recommended",
+      "introduced"
+    ],
+    "optionsZh": [
+      "呈现",
+      "限制",
+      "推荐、建议",
+      "引入"
+    ],
+    "reason": "be recommended for表示建议用于某类人群。not与孕妇、年长者等限制对象相接。",
+    "trap": "restricted for搭配不自然，限制于常用restricted to；presented和introduced不表达适宜性建议。",
+    "tip": "记住recommend something for someone与be recommended for。",
+    "evidence": "More than three million",
+    "refPage": 6
+  },
+  {
+    "id": 19,
+    "passage": 0,
+    "answer": "A",
+    "picked": "A",
+    "text": "Choose the best word(s) for blank 19.",
+    "zh": "呼吸困难、心脏病及其他健康问题",
+    "options": [
+      "problems",
+      "issues",
+      "agonies",
+      "sufferings"
+    ],
+    "optionsZh": [
+      "问题",
+      "议题",
+      "剧痛",
+      "痛苦、苦难"
+    ],
+    "reason": "前面列举呼吸困难和心脏病，several other problems用上位词概括其他健康问题。",
+    "trap": "issues通常指待讨论的议题；agonies与sufferings强调痛苦体验，不能自然概括这里的疾病条件。",
+    "tip": "列举后出现other时，寻找能包住前面各项的上位概念。",
+    "evidence": "More than three million",
+    "refPage": 6
+  },
+  {
+    "id": 20,
+    "passage": 0,
+    "answer": "B",
+    "picked": "A",
+    "text": "Choose the best word(s) for blank 20.",
+    "zh": "照料婴儿的人也是高风险人群",
+    "options": [
+      "involved in",
+      "caring for",
+      "concerned with",
+      "warding off"
+    ],
+    "optionsZh": [
+      "参与",
+      "照料",
+      "关心、涉及",
+      "防范、避开"
+    ],
+    "reason": "caring for infants作后置修饰语，意为照料婴儿的人，与health care workers一起列为需保护的人群。",
+    "trap": "involved in后接活动而非直接表达照料婴儿；concerned with不等于实际照料；warding off是防范、避开，语义不符。",
+    "tip": "区分care for的实际照料与仅表示关注、涉及的表达。",
+    "evidence": "other high-risk groups",
+    "refPage": 6
+  },
+  {
+    "id": 21,
+    "passage": 1,
+    "answer": "D",
+    "picked": "B",
+    "text": "In the first paragraph, Damien Hirst's sale was referred to as \"a last victory\" because ____",
+    "zh": "第一段为什么把赫斯特的拍卖称为“最后的胜利”？",
+    "options": [
+      "the art market had witnessed a succession of victories",
+      "the auctioneer finally got the two pieces at the highest bids",
+      "Beautiful Inside My Head Forever won over all masterpieces",
+      "it was successfully made just before the world financial crisis"
+    ],
+    "optionsZh": [
+      "艺术市场接连取得胜利",
+      "拍卖师最终以最高价卖出了那两件作品",
+      "这场拍卖胜过了所有杰作",
+      "它在全球金融危机爆发前夕成功举行"
+    ],
+    "reason": "第一段将拍卖成功与雷曼兄弟申请破产放在同一时间点；随后文章转入市场衰退。“last”强调成功发生在危机前夕。",
+    "trap": "A把重点放在此前多次成功，不能解释“最后”；B把“除两件外都售出”读成“两件最后售出”；C的“胜过所有杰作”没有依据。",
+    "tip": "解释评价词时，同时看前后的事件关系，尤其是转折与时间对照。",
+    "evidence": "filed for bankruptcy",
+    "refPage": 9
+  },
+  {
+    "id": 22,
+    "passage": 1,
+    "answer": "A",
+    "picked": "C",
+    "text": "By saying \"spending of any sort became deeply unfashionable\" (Line 1-2, Para. 3), the author suggests that____",
+    "zh": "“各类消费都变得十分不合时宜”暗示了什么？",
+    "options": [
+      "collectors were no longer actively involved in art-market auctions",
+      "people stopped every kind of spending and stayed away from galleries",
+      "art collection as a fashion had lost its appeal to a great extent",
+      "works of art in general had gone out of fashion so they were not worth buying"
+    ],
+    "optionsZh": [
+      "收藏家不再积极参与艺术品拍卖",
+      "人们停止了所有消费，不再去画廊",
+      "艺术品收藏作为一种时尚大幅失去吸引力",
+      "艺术品已过时，因而不值得购买"
+    ],
+    "reason": "第三段下一句直接解释：收藏家远离画廊和拍卖场。这对应A的“不再积极参与拍卖”。",
+    "trap": "B的“所有消费都停止”过于绝对；C把消费低迷偷换成“收藏作为时尚失去吸引力”；D额外推出“不值得购买”，原文没有这种价值判断。",
+    "tip": "词句含义题优先读紧接着的解释句，别只凭同一个单词配对。",
+    "evidence": "collectors stayed away",
+    "refPage": 12
+  },
+  {
+    "id": 23,
+    "passage": 1,
+    "answer": "B",
+    "picked": "A",
+    "text": "Which of the following statements is NOT true?",
+    "zh": "以下哪项说法不正确？",
+    "options": [
+      "Sales of contemporary art fell dramatically from 2007 to 2008.",
+      "The art market surpassed many other industries in momentum.",
+      "The art market generally went downward in various ways.",
+      "Some art dealers were awaiting better chances to come."
+    ],
+    "optionsZh": [
+      "2007至2008年当代艺术品销售额大幅下降",
+      "艺术市场的增长势头超过了许多其他行业",
+      "艺术市场在多方面普遍下滑",
+      "部分艺术品交易者正在等待更好的时机"
+    ],
+    "reason": "第二段说艺术市场已失去增长势头；它超过规模的，是引发的关注，而非增长势头。B偷换了比较对象。",
+    "trap": "A对应销售额大幅下滑；C概括规模、销量和价格的下降；D对应末段等待信心恢复。它们都有依据。",
+    "tip": "先圈出NOT，再检查比较句到底在比较什么：关注度不等于增长速度。",
+    "evidence": "generates interest",
+    "refPage": 13
+  },
+  {
+    "id": 24,
+    "passage": 1,
+    "answer": "C",
+    "picked": "B",
+    "text": "The three Ds mentioned in the last paragraph are____",
+    "zh": "末段的“三个D”是什么？",
+    "options": [
+      "auction houses' favorites",
+      "contemporary trends",
+      "factors promoting artwork circulation",
+      "styles representing Impressionists"
+    ],
+    "optionsZh": [
+      "拍卖行的最爱",
+      "当代趋势",
+      "推动艺术品流通的因素",
+      "代表印象派的风格"
+    ],
+    "reason": "death、debt和divorce分别是死亡、债务与离婚。原文说这些情况仍会把作品带到市场，即促使持有人出售艺术品。",
+    "trap": "A的“最爱”属于主观添加；B只说“当代趋势”太笼统且无依据；D与三个词的含义无关。",
+    "tip": "读不熟悉的简称时，先看同位解释，再看它作主语时带出的动作。",
+    "evidence": "The three Ds",
+    "refPage": 14
+  },
+  {
+    "id": 25,
+    "passage": 1,
+    "answer": "C",
+    "picked": "C",
+    "text": "The most appropriate title for this text could be____",
+    "zh": "最合适的标题是什么？",
+    "options": [
+      "Fluctuation of Art Prices",
+      "Up-to-date Art Auctions",
+      "Art Market in Decline",
+      "Shifted Interest in Arts"
+    ],
+    "optionsZh": [
+      "艺术品价格的波动",
+      "最新艺术拍卖",
+      "衰退中的艺术品市场",
+      "对艺术的兴趣发生转移"
+    ],
+    "reason": "文章从最后一次成功拍卖写到市场规模、销售和价格下降，再写卖家的观望。C能覆盖全文的共同主题。",
+    "trap": "A只抓价格这一局部；B只覆盖开头的拍卖事件；D把经济衰退下的交易减少误读为审美兴趣转移。",
+    "tip": "标题须同时涵盖主题对象和全文方向，不能只概括一个例子。",
+    "evidence": "current downturn",
+    "refPage": 14
+  },
+  {
+    "id": 26,
+    "passage": 2,
+    "answer": "A",
+    "picked": "A",
+    "text": "What is most wives' main expectation of their husbands?",
+    "zh": "大多数妻子对丈夫最主要的期待是什么？",
+    "options": [
+      "Talking to them.",
+      "Trusting them.",
+      "Supporting their careers.",
+      "Sharing housework."
+    ],
+    "optionsZh": [
+      "和她们交谈",
+      "信任她们",
+      "支持她们的事业",
+      "分担家务"
+    ],
+    "reason": "第四段的first and foremost明确标出优先级：妻子首先希望丈夫成为交谈伙伴。A是直接改写。",
+    "trap": "B无对应依据；C和D涉及事业、家务，但作者用not...Instead...说明这些不是此处最集中的抱怨。",
+    "tip": "看到first and foremost、main、most等词，优先寻找作者明确排序的表达。",
+    "evidence": "conversational partners",
+    "refPage": 21
+  },
+  {
+    "id": 27,
+    "passage": 2,
+    "answer": "C",
+    "picked": "C",
+    "text": "Judging from the context, the phrase \"wreaking havoc\" (Line 3, Para. 2) most probably means ____",
+    "zh": "短语wreaking havoc在上下文中是什么意思？",
+    "options": [
+      "generating motivation",
+      "exerting influence",
+      "causing damage",
+      "creating pressure"
+    ],
+    "optionsZh": [
+      "产生动力",
+      "施加影响",
+      "造成损害",
+      "制造压力"
+    ],
+    "reason": "第二段把夫妻沟通模式与婚姻问题联系起来，随后举出离婚和沟通失败。短语强调严重破坏，对应C。",
+    "trap": "B的“影响”没有体现负面性质；D虽然负面，但“压力”弱化了破坏结果；A与语气相反。",
+    "tip": "利用后文的结果判断陌生短语的情感方向和程度。",
+    "evidence": "wreaking havoc",
+    "refPage": 18
+  },
+  {
+    "id": 28,
+    "passage": 2,
+    "answer": "B",
+    "picked": "D",
+    "text": "All of the following are true EXCEPT ____",
+    "zh": "以下说法中哪一项不符合原文？",
+    "options": [
+      "men tend to talk more in public than women",
+      "nearly 50 percent of recent divorces are caused by failed conversation",
+      "women attach much importance to communication between couples",
+      "a female tends to be more talkative at home than her spouse"
+    ],
+    "optionsZh": [
+      "男性在公共场合往往比女性话多",
+      "近50%的近期离婚由沟通失败造成",
+      "女性很重视夫妻沟通",
+      "女性在家中往往比配偶话多"
+    ],
+    "reason": "近50%修饰的是总体离婚率，原文没有说“离婚案例中有50%由沟通失败造成”。B更换了比例所对应的群体。",
+    "trap": "A对应第二段的公共场合比较；C对应受访妻子的沟通诉求；D与家中男性少言、女性维持谈话的描述相符。",
+    "tip": "遇到百分比，写清楚“什么占什么的百分之几”，检查分母有没有被换掉。",
+    "evidence": "Given the current divorce rate",
+    "refPage": 20
+  },
+  {
+    "id": 29,
+    "passage": 2,
+    "answer": "D",
+    "picked": "A",
+    "text": "Which of the following can best summarize the main idea of this text?",
+    "zh": "哪一项最能概括本文主旨？",
+    "options": [
+      "The moral decaying deserves more research by sociologists.",
+      "Marriage break-up stems from sex inequalities.",
+      "Husband and wife have different expectations from their marriage.",
+      "Conversational patterns between man and wife are different."
+    ],
+    "optionsZh": [
+      "道德衰败值得社会学家进一步研究",
+      "婚姻破裂源于性别不平等",
+      "夫妻对婚姻抱有不同期待",
+      "夫妻双方的交谈模式不同"
+    ],
+    "reason": "全文围绕男性在外健谈、在家沉默，与妻子希望沟通之间的差异展开。D紧扣交谈模式这一中心。",
+    "trap": "A的“道德衰败”未被讨论；B抓住作者排除的具体不平等；C的“对婚姻的期待”范围过大，没有限定在本文反复讨论的交谈。",
+    "tip": "主旨优先选择既覆盖全文又不超出讨论范围的选项。",
+    "evidence": "This episode crystallizes",
+    "refPage": 22
+  },
+  {
+    "id": 30,
+    "passage": 2,
+    "answer": "B",
+    "picked": "C",
+    "text": "In the following part immediately after this text, the author will most probably focus on____",
+    "zh": "本文之后作者最可能接着写什么？",
+    "options": [
+      "a vivid account of the new book Divorce Talk",
+      "a detailed description of the stereotypical cartoon",
+      "other possible reasons for a high divorce rate in the U.S.",
+      "a brief introduction to the political scientist Andrew Hacker"
+    ],
+    "optionsZh": [
+      "详细介绍新书《离婚谈》",
+      "具体描述那幅典型漫画",
+      "介绍美国离婚率高的其他可能原因",
+      "简要介绍政治学家哈克"
+    ],
+    "reason": "结尾引入了能代表危机的漫画场景。最自然的衔接是继续展开这个刚提出的场景，对应B。",
+    "trap": "A和D是前文已出现的背景信息；C跳离结尾的具体话题，缺少引出“其他原因”的过渡。",
+    "tip": "预测下文时优先依据末段的新话题和未展开的信息，避免凭全文主题自由联想。",
+    "evidence": "stereotypical cartoon",
+    "refPage": 22
+  },
+  {
+    "id": 31,
+    "passage": 3,
+    "answer": "A",
+    "picked": "A",
+    "text": "According to Dr. Curtis, habits like hand washing with soap____",
+    "zh": "柯蒂斯博士如何看待用肥皂洗手等习惯？",
+    "options": [
+      "should be further cultivated",
+      "should be changed gradually",
+      "are deeply rooted in history",
+      "are basically private concerns"
+    ],
+    "optionsZh": [
+      "应该进一步培养",
+      "应该逐步改变",
+      "深深植根于历史",
+      "基本属于私人事务"
+    ],
+    "reason": "她指出不洗手带来的卫生问题仍在致人死亡，并希望向企业学习如何形成自动行为。因此良好的洗手习惯需要培养。",
+    "trap": "B把要改变的不良行为与要培养的良好习惯混为一谈；C没有历史依据；D与public health的公共卫生语境不符。",
+    "tip": "区分要改变的坏习惯与要建立的好习惯，明确动作指向。",
+    "evidence": "soap habit",
+    "refPage": 27
+  },
+  {
+    "id": 32,
+    "passage": 3,
+    "answer": "A",
+    "picked": "A",
+    "text": "Bottled water, chewing gum and skin moisturizers are mentioned in Paragraph 5 so as to ____",
+    "zh": "第五段为什么提到瓶装水、口香糖和润肤品？",
+    "options": [
+      "reveal their impact on people's habits",
+      "show the urgent need of daily necessities",
+      "indicate their effect on people's buying power",
+      "manifest the significant role of good habits"
+    ],
+    "optionsZh": [
+      "说明它们对人们习惯的影响",
+      "说明日用品的迫切需求",
+      "说明它们对购买力的影响",
+      "表明良好习惯的重要作用"
+    ],
+    "reason": "三组例子分别写产品推广如何融入喝水、饭后清洁与晨间美容，使行为成为日常习惯，支撑广告塑造习惯的论点。",
+    "trap": "B添加“迫切需要”；C讨论购买能力而非行为；D把具体的消费习惯泛化为“好习惯”。",
+    "tip": "例证题先概括多个例子的共同作用，再回扣段落论点。",
+    "evidence": "A few decades ago",
+    "refPage": 29
+  },
+  {
+    "id": 33,
+    "passage": 3,
+    "answer": "D",
+    "picked": "D",
+    "text": "Which of the following does NOT belong to products that help create people's habits?",
+    "zh": "哪一项不属于帮助形成习惯的产品？",
+    "options": [
+      "Tide.",
+      "Crest.",
+      "Colgate.",
+      "Unilever."
+    ],
+    "optionsZh": [
+      "汰渍",
+      "佳洁士",
+      "高露洁",
+      "联合利华"
+    ],
+    "reason": "文中把Unilever列作柯蒂斯求助的公司；Tide、Crest和Colgate在语境中是产品品牌。D在类别上不同。",
+    "trap": "不要只因为四个名称都出现过就认为它们属于同一类。题目限定的是products。",
+    "tip": "对陌生专名先看同位语与上下文分类，再做排除。",
+    "evidence": "The companies that",
+    "refPage": 29
+  },
+  {
+    "id": 34,
+    "passage": 3,
+    "answer": "C",
+    "picked": "C",
+    "text": "From the text we know that some of consumers' habits are developed due to____",
+    "zh": "一些消费者习惯是因为什么形成的？",
+    "options": [
+      "perfected art of products",
+      "automatic behavior creation",
+      "commercial promotions",
+      "scientific experiments"
+    ],
+    "optionsZh": [
+      "完善的产品工艺",
+      "自动行为的创造",
+      "商业促销",
+      "科学实验"
+    ],
+    "reason": "文章多次写到广告和商业推广将产品与日常提示结合，让消费行为自动化，C概括其推动方式。",
+    "trap": "A把创造习惯的技巧误解成产品工艺；B只是把结果“形成自动行为”换一种说法；D是研究这些机制的手段，不能替代推广的作用。",
+    "tip": "区分原因、结果和研究手段，选择能解释“如何形成”的因素。",
+    "evidence": "shrewd advertising",
+    "refPage": 31
+  },
+  {
+    "id": 35,
+    "passage": 3,
+    "answer": "B",
+    "picked": "B",
+    "text": "The author's attitude toward the influence of advertisement on people's habits is",
+    "zh": "作者对广告影响人们习惯的态度是什么？",
+    "options": [
+      "indifferent",
+      "negative",
+      "positive",
+      "biased"
+    ],
+    "optionsZh": [
+      "漠不关心",
+      "否定、批评",
+      "肯定、赞成",
+      "有偏见"
+    ],
+    "reason": "末段的ruthless、questionable、unhealthy等措辞显示作者对广告被用来推动有问题消费的批评态度，对应B。",
+    "trap": "C容易被企业人员关于positive habits的引语干扰，那是受访者观点；A不符合明显的评价措辞；D是对作者公正性的指责，不能等同于作者持负面态度。",
+    "tip": "态度题分清“作者自己的措辞”和“他人引语”，重点看收束段。",
+    "evidence": "controversies have erupted",
+    "refPage": 31
+  },
+  {
+    "id": 36,
+    "passage": 4,
+    "answer": "D",
+    "picked": "A",
+    "text": "From the principles of the US jury system, we learn that ____",
+    "zh": "从美国陪审团制度原则可以得知什么？",
+    "options": [
+      "both literate and illiterate people can serve on juries",
+      "defendants are immune from trial by their peers",
+      "no age limit should be imposed for jury service",
+      "judgment should consider the opinion of the public"
+    ],
+    "optionsZh": [
+      "识字和不识字者都能担任陪审员",
+      "被告可免于同辈人的审判",
+      "陪审服务不应设置年龄限制",
+      "判决应考虑公众意见"
+    ],
+    "reason": "第一段规定裁决应体现社区的良知，而不只遵循法律字面，对应D。",
+    "trap": "A忽略最低识字要求；B把“有权接受同辈审判”说成“免于审判”；C忽略最低年龄要求。",
+    "tip": "原则列举题逐条核对限定条件，尤其注意“有权做”与“免于做”的差别。",
+    "evidence": "Many Americans regard",
+    "refPage": 35
+  },
+  {
+    "id": 37,
+    "passage": 4,
+    "answer": "A",
+    "picked": "C",
+    "text": "The practice of selecting so-called elite jurors prior to 1968 showed ____",
+    "zh": "1968年前选择所谓精英陪审员的做法说明了什么？",
+    "options": [
+      "the inadequacy of anti discrimination laws",
+      "the prevalent discrimination against certain races",
+      "the conflicting ideals in jury selection procedures",
+      "the arrogance common among the Supreme Court judges"
+    ],
+    "optionsZh": [
+      "反歧视法律存在不足",
+      "针对某些种族的歧视普遍存在",
+      "陪审选拔程序内部的理想相冲突",
+      "最高法院法官普遍傲慢"
+    ],
+    "reason": "第二段先说法律禁止种族歧视，再说“精英”选拔为绕过这些法律提供方便，说明法律未能充分阻止歧视，对应A。",
+    "trap": "B泛化为种族歧视的普遍程度；C把实际程序与民主理想冲突，偷换成理想彼此冲突；D的法官傲慢没有依据。",
+    "tip": "看到way around a law，理解为绕过法律，抓住“有规定但可规避”的逻辑。",
+    "evidence": "provided a convenient way",
+    "refPage": 37
+  },
+  {
+    "id": 38,
+    "passage": 4,
+    "answer": "C",
+    "picked": "C",
+    "text": "Even in the 1960s, women were seldom on the jury list in some states because",
+    "zh": "为什么到20世纪60年代某些州的陪审名单仍少有女性？",
+    "options": [
+      "they were automatically banned by state laws",
+      "they fell far short of the required qualifications",
+      "they were supposed to perform domestic duties",
+      "they tended to evade public engagement"
+    ],
+    "optionsZh": [
+      "州法律自动禁止她们担任陪审员",
+      "她们远未达到资格要求",
+      "人们认为她们应承担家庭事务",
+      "她们倾向于逃避公共活动"
+    ],
+    "reason": "第三段明确说，这种做法以women were needed at home为理由，即认为女性应留在家中履行家庭职责。",
+    "trap": "A把自动豁免义务说成禁止，忽略女性可主动申请；B没有资格不足的依据；D把制度理由推给女性自己的倾向。",
+    "tip": "区别ban与exempt：禁止参与和免除义务不是一回事。",
+    "evidence": "women were needed at home",
+    "refPage": 38
+  },
+  {
+    "id": 39,
+    "passage": 4,
+    "answer": "B",
+    "picked": "B",
+    "text": "After the Jury Selection and Service Act was passed____ ____",
+    "zh": "《陪审员选拔与服务法》通过后发生了什么？",
+    "options": [
+      "sex discrimination in jury selection was unconstitutional and had to be abolished",
+      "educational requirements became less rigid in the selection of federal jurors",
+      "jurors at the state level ought to be representative of the entire community",
+      "states ought to conform to the federal court in reforming the jury system"
+    ],
+    "optionsZh": [
+      "性别歧视被认定违宪并须废除",
+      "联邦陪审员的教育要求放宽",
+      "州级陪审员应代表整个社区",
+      "各州须在制度改革中遵循联邦法院"
+    ],
+    "reason": "1968年的法律取消联邦陪审员的特殊教育门槛，因此教育要求不再那么严格，对应B。",
+    "trap": "A和C对应后文1975年的泰勒案，不能提前归到1968年的法律；D是没有直接依据的扩大概括。",
+    "tip": "把时间与适用层级配对：1968—联邦；1975—州一级与性别歧视。",
+    "evidence": "This law abolished",
+    "refPage": 40
+  },
+  {
+    "id": 40,
+    "passage": 4,
+    "answer": "D",
+    "picked": "D",
+    "text": "In discussing the US jury system, the text centers on ____",
+    "zh": "文章主要讨论美国陪审团制度的什么方面？",
+    "options": [
+      "its nature and problems",
+      "its characteristics and tradition",
+      "its problems and their solutions",
+      "its tradition and development"
+    ],
+    "optionsZh": [
+      "性质与问题",
+      "特点与传统",
+      "问题及其解决方法",
+      "传统与发展"
+    ],
+    "reason": "第一段介绍民主原则，随后回顾制度实践中的偏离，再按时间写法律改革。D用“传统与发展”涵盖全文的历史脉络。",
+    "trap": "A漏掉末段改革；B没有体现变化；C只抓问题与修正，不能充分覆盖开头介绍的制度传统与整篇历史演变。",
+    "tip": "全篇概括要覆盖开头、主体和结尾，沿段落功能串起结构。",
+    "evidence": "In 1968",
+    "refPage": 40
+  }
+]

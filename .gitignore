@@ -1,0 +1,6 @@
+node_modules/
+scripts/cache/
+.sites-runtime/
+*.tar.gz
+*.zip
+__pycache__/
