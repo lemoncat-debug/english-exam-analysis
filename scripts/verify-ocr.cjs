@@ -12,6 +12,7 @@ const {createWorker}=require('tesseract.js');
    const {data}=await worker.recognize(path.join(root,'dist/assets/photo-'+page+'.jpg'),{},{text:true,blocks:true});
    const words=data.blocks.flatMap(b=>b.paragraphs.flatMap(p=>p.lines.flatMap(l=>l.words))).filter(w=>w.confidence>=20);
    const result=ctx.matchPhotoWords(words,d.pages[page-1].words);
+   const ranked=d.pages.map(p=>({page:p.id,result:ctx.matchPhotoWords(words,p.words)})).sort((a,b)=>b.result.matched-a.result.matched);assert.equal(ranked[0].page,page,'Wrong page suggestion');
    assert(result.ratio>=.35&&result.matched>=20,'Photo did not match '+page);
    assert(result.words.some(w=>w.sid),'No sentences matched');
    console.log(JSON.stringify({page,ocrWords:words.length,matched:result.matched,ratio:Number(result.ratio.toFixed(3)),linked:result.words.filter(w=>w.sid).length}));

@@ -1,15 +1,17 @@
 'use strict';
 const D=window.STUDY_DATA, $=s=>document.querySelector(s), esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const norm=s=>String(s).toLowerCase().replace(/^[^a-z0-9]+|[^a-z0-9]+$/g,'').replace(/’/g,"'").replace(/_+.*$/,'');
-const read=(k,f)=>{try{return JSON.parse(localStorage.getItem(k))??f}catch{return f}};
-const S={passage:1,view:'text',mode:'word',panel:'lookup',page:3,word:null,sid:null,question:22,reveal:false,zoom:1,answers:read('study2010.answers',{}),saved:read('study2010.saved',[]),confirmed:read('study2010.confirmed',{}),uploads:{}};
+const storageAdapter={getItem:key=>localStorage.getItem(key),setItem:(key,value)=>localStorage.setItem(key,value)};
+const initial=StudyStore.load(storageAdapter,D);
+const S={...initial.state.last,word:null,sid:null,panel:'lookup',reveal:false,rawWord:'',answers:initial.state.answers,saved:initial.state.saved,confirmed:initial.state.confirmed,notes:initial.state.notes,tags:initial.state.tags,mastered:initial.state.mastered,attempts:initial.state.attempts,scrolls:initial.state.last.scrolls,uploads:{},filter:'all',retry:false,retryChoice:null,retrySubmitted:false,storageWarning:initial.warning};
+function stateSnapshot(){return {schema:2,year:2010,answers:S.answers,confirmed:S.confirmed,notes:S.notes,tags:S.tags,mastered:S.mastered,attempts:S.attempts,saved:S.saved,last:{passage:S.passage,page:S.page,view:S.view,mode:S.mode,question:S.question,zoom:S.zoom,scrolls:S.scrolls}}}
 let toastTimer;
 function toast(msg){$('#toast').textContent=msg;$('#toast').hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('#toast').hidden=true,3200)}
-function persist(){try{localStorage.setItem('study2010.answers',JSON.stringify(S.answers));localStorage.setItem('study2010.saved',JSON.stringify(S.saved));localStorage.setItem('study2010.confirmed',JSON.stringify(S.confirmed))}catch{toast('浏览器无法保存记录，请导出备份。')}}
+function persist(){try{if(S.storageWarning){const original=storageAdapter.getItem(StudyStore.KEY);if(original)storageAdapter.setItem(StudyStore.KEY+'.recovery',original);S.storageWarning=null}StudyStore.save(storageAdapter,stateSnapshot());document.dispatchEvent(new Event('study:changed'))}catch{toast('浏览器无法保存记录，请立即导出备份。')}}
 function passage(){return D.passages.find(p=>p.id===S.passage)}
 function questions(){return D.questions.filter(q=>q.passage===S.passage)}
-function answer(q){return Object.hasOwn(S.answers,q.id)?S.answers[q.id]:q.picked}
-function switchPassage(id){if(!D.passages.some(p=>p.id===id))throw Error('没有这篇文章');S.passage=id;S.page=passage().page;S.sid=null;S.word=null;S.question=questions()[0]?.id??null;S.reveal=false;render()}
+function answer(q){return StudyStore.chosen(S,q)}
+function switchPassage(id){if(!D.passages.some(p=>p.id===id))throw Error('没有这篇文章');S.passage=id;S.page=passage().page;S.sid=null;S.word=null;S.question=questions()[0]?.id??null;S.reveal=false;S.retry=false;S.retryChoice=null;S.retrySubmitted=false;S.filter='all';render()}
 function sentenceMarkup(s){return '<span class="sentence '+(S.sid===s.id?'selected':'')+'" data-sid="'+esc(s.id)+'">'+s.en.split(/(\s+)/).map(t=>/\s/.test(t)?t:'<button class="word" data-word="'+esc(t)+'" data-sid="'+esc(s.id)+'">'+esc(t)+'</button>').join('')+'</span>'}
 function render(){
  $('#passageNav').innerHTML=D.passages.map(p=>'<button data-passage="'+p.id+'" class="'+(p.id===S.passage?'active':'')+'"><small>'+(p.id?'READING / TEXT '+p.id:'USE OF ENGLISH')+'</small><strong>'+esc(p.title)+'</strong></button>').join('');
@@ -18,7 +20,7 @@ function render(){
  document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===S.view));
  document.querySelectorAll('[data-mode]').forEach(b=>b.classList.toggle('active',b.dataset.mode===S.mode));
  document.querySelectorAll('[data-panel]').forEach(b=>b.classList.toggle('active',b.dataset.panel===S.panel));
- $('#wrongBadge').textContent=questions().filter(q=>answer(q)&&answer(q)!==q.answer).length||'';
+ $('#wrongBadge').textContent=StudyStore.stats(S,questions()).wrong||'';
  renderReader();renderPanel();
 }
 function renderReader(){
@@ -39,7 +41,7 @@ function renderReader(){
   }).join('')+'</svg></div>';
  }
 }
-function lookup(text,sid){S.rawWord=String(text);S.word=norm(text);S.sid=sid;S.panel='lookup';renderPanel();document.querySelectorAll('[data-panel]').forEach(b=>b.classList.toggle('active',b.dataset.panel===S.panel));document.querySelectorAll('.word.selected,.sentence.selected').forEach(el=>el.classList.remove('selected'));document.querySelectorAll('[data-sid]').forEach(el=>{if(el.dataset.sid===sid&&((el.classList.contains('sentence')&&S.mode==='sentence')||(el.classList.contains('word')&&norm(el.dataset.word)===S.word)))el.classList.add('selected')});document.querySelectorAll('[data-image-word]').forEach(el=>{const pg=D.pages.find(p=>p.id===S.page),ws=S.view==='photo'?(S.uploads[S.page]?.words||pg.photoWords):pg.words,w=ws[Number(el.dataset.imageWord)];el.classList.toggle('selected',S.mode==='sentence'?w.sid===sid&&!!sid:w.sid===sid&&norm(w.text)===S.word)});if(innerWidth<900)document.querySelector('.study-panel').scrollIntoView({behavior:'smooth',block:'start'})}
+function lookup(text,sid){S.rawWord=String(text);S.word=norm(text);S.sid=sid;S.panel='lookup';renderPanel();document.querySelectorAll('[data-panel]').forEach(b=>b.classList.toggle('active',b.dataset.panel===S.panel));document.querySelectorAll('.word.selected,.sentence.selected').forEach(el=>el.classList.remove('selected'));document.querySelectorAll('[data-sid]').forEach(el=>{if(el.dataset.sid===sid&&((el.classList.contains('sentence')&&S.mode==='sentence')||(el.classList.contains('word')&&norm(el.dataset.word)===S.word)))el.classList.add('selected')});document.querySelectorAll('[data-image-word]').forEach(el=>{const pg=D.pages.find(p=>p.id===S.page),ws=S.view==='photo'?(S.uploads[S.page]?.words||pg.photoWords):pg.words,w=ws[Number(el.dataset.imageWord)];el.classList.toggle('selected',S.mode==='sentence'?w.sid===sid&&!!sid:w.sid===sid&&norm(w.text)===S.word)});if(innerWidth<900)document.body.classList.add('panel-open')}
 function dictionary(word){if(/^[0-9]+(?:[.,][0-9]+)*$/.test(word||''))return {word,lemma:word,zh:/%/.test(S.rawWord||'')?'百分之 '+word:'数字 '+word};const exact=D.dictionary[word];if(exact)return exact;const base=word?.replace(/'s$/,'');if(D.dictionary[base])return D.dictionary[base];return null}
 function renderPanel(){
  document.querySelectorAll('[data-panel]').forEach(b=>b.classList.toggle('active',b.dataset.panel===S.panel));
@@ -53,9 +55,9 @@ function renderPanel(){
   const context=typeof CONTEXT!=='undefined'?CONTEXT[S.passage]?.[S.word]:null;
   box.innerHTML='<div class="kicker">WORD / '+(s?.paragraph?'第 '+s.paragraph+' 段':'词典')+'</div><div class="lookup-top"><div><h2>'+esc(S.word)+'</h2><div class="phonetic">'+(entry?.phonetic?'/'+esc(entry.phonetic)+'/':'')+(entry?.lemma!==S.word&&entry?.lemma?' · 原形 '+esc(entry.lemma):'')+'</div></div><button id="speakWord" aria-label="朗读单词">▷</button></div>'+(context?'<div class="label">本文语境</div><div class="definition">'+esc(context)+'</div>':'')+'<div class="label">词典释义</div><div class="definition">'+esc(entry?.zh||'未收录这个拼写。可查看下方整句翻译，或回到清晰原文核对。')+'</div>'+(s?'<div class="label">所在句子</div><div class="context-box"><p class="en">'+esc(s.en)+'</p><p>'+esc(s.zh||'该句翻译尚未匹配。')+'</p></div><button id="wholeSentence" class="evidence-button">查看整句</button>':'')+'<button id="saveLookup" class="save-button">'+(saved?'★ 已收藏':'☆ 收藏这个词')+'</button><p class="source-note">基础词典：ECDICT。语境释义和译文按本套题整理。</p>';
  }
- $('#saveLookup')?.addEventListener('click',()=>{if(saved)S.saved=S.saved.filter(x=>x.key!==saveKey);else S.saved.push({key:saveKey,type:S.mode,text:S.mode==='sentence'?s.en:S.word,translation:S.mode==='sentence'?s.zh:(entry?.zh||s?.zh||''),sid:S.sid,passage:S.passage});persist();renderPanel()});
+ $('#saveLookup')?.addEventListener('click',()=>{if(S.mode==='sentence'&&!s){toast('请先选中一句原文');return}if(saved)S.saved=S.saved.filter(x=>x.key!==saveKey);else S.saved.push({key:saveKey,type:S.mode,text:S.mode==='sentence'?s.en:S.word,translation:S.mode==='sentence'?s.zh:(CONTEXT?.[S.passage]?.[S.word]||entry?.zh||s?.zh||''),sid:S.sid,passage:S.passage});persist();renderPanel()});
  $('#speakWord')?.addEventListener('click',()=>{if(!('speechSynthesis'in window)){toast('此浏览器不支持朗读');return}speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(S.word);u.lang='en-US';u.rate=.85;speechSynthesis.speak(u)});
- $('#wholeSentence')?.addEventListener('click',()=>{S.mode='sentence';render()});
+ $('#wholeSentence')?.addEventListener('click',()=>{S.mode='sentence';const pos=$('#reader').scrollTop;render();$('#reader').scrollTop=pos});
 }
 function sentenceNote(s){
  const notes={
@@ -81,17 +83,17 @@ function showCollection(){modal('我的收藏',S.saved.length?S.saved.map((x,i)=
 document.addEventListener('click',e=>{
  const b=e.target.closest('button,polygon,rect');if(!b)return;
  if(b.dataset.passage!==undefined)switchPassage(Number(b.dataset.passage));
- if(b.dataset.view){S.view=b.dataset.view;render()}
- if(b.dataset.mode){S.mode=b.dataset.mode;render()}
- if(b.dataset.panel){S.panel=b.dataset.panel;renderPanel()}
- if(b.dataset.page){S.page=Number(b.dataset.page);S.sid=null;S.word=null;render()}
+ if(b.dataset.view){rememberPosition();S.view=b.dataset.view;render();restorePosition();persist()}
+ if(b.dataset.mode){const pos=$('#reader').scrollTop;S.mode=b.dataset.mode;render();$('#reader').scrollTop=pos;persist()}
+ if(b.dataset.panel){S.panel=b.dataset.panel;renderPanel();if(innerWidth<900)document.body.classList.add('panel-open')}
+ if(b.dataset.page){rememberPosition();S.page=Number(b.dataset.page);S.sid=null;S.word=null;render();restorePosition();persist()}
  if(b.dataset.word)lookup(b.dataset.word,b.dataset.sid);
  if(b.dataset.imageWord!==undefined){const pg=D.pages.find(p=>p.id===S.page),words=S.view==='photo'?(S.uploads[S.page]?.words||pg.photoWords):pg.words,w=words[Number(b.dataset.imageWord)];if(S.mode==='sentence'&&!w.sid){toast('这一处尚未匹配整句，请切换到清晰原文。');return}lookup(w.text,w.sid)}
- if(b.dataset.question){S.question=Number(b.dataset.question);S.panel='questions';S.reveal=false;renderPanel()}
- if(b.dataset.answer){S.answers[S.question]=b.dataset.answer;S.confirmed[S.question]=true;persist();renderPanel();$('#wrongBadge').textContent=questions().filter(q=>answer(q)&&answer(q)!==q.answer).length||''}
+ if(b.dataset.question){openQuestion(Number(b.dataset.question))}
+ if(b.dataset.answer){selectAnswer(b.dataset.answer)}
  if(b.id==='tryWord'){let s=passage().paragraphs[0][0],word=s.en.split(' ')[0];if(S.passage===1){s=passage().paragraphs[1][0];word='momentum'}lookup(word,s.id)}
  if(b.dataset.removeSave!==undefined){S.saved.splice(Number(b.dataset.removeSave),1);persist();showCollection()}
- if(b.dataset.openSave!==undefined){const x=S.saved[Number(b.dataset.openSave)];$('#modal').close();switchPassage(x.passage);S.mode=x.type;lookup(x.text,x.sid)}
+ if(b.dataset.openSave!==undefined){const x=S.saved[Number(b.dataset.openSave)];$('#modal').close();switchPassage(x.passage);S.mode=x.type==='sentence'?'sentence':'word';const sentence=D.sentences[x.sid];if(sentence?.id?.startsWith('q'))S.page=passage().questionPage;S.view='text';render();lookup(x.text,x.sid);document.querySelector('.sentence.selected')?.scrollIntoView({block:'center'});persist()}
 });
 $('#reader').addEventListener('click',e=>{if(S.mode==='sentence'&&S.view==='text'){const el=e.target.closest('.sentence');if(el)lookup('',el.dataset.sid)}});
 $('#reader').addEventListener('keydown',e=>{if(['Enter',' '].includes(e.key)&&e.target.dataset.imageWord!==undefined){e.preventDefault();e.target.dispatchEvent(new MouseEvent('click',{bubbles:true}))}});
