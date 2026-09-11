@@ -1,11 +1,11 @@
 {
   "name": "kaoyan-english-study",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "private": true,
   "scripts": {
-    "check": "node scripts/verify.mjs",
-    "test:ocr": "node scripts/verify-ocr.cjs",
-    "test:records": "node scripts/verify-records.mjs"
+    "check": "node scripts/verify-universal.cjs && node scripts/verify-matching.cjs",
+    "test:photos": "node scripts/test-photo-matching.cjs",
+    "build:library": "python scripts/build-library.py"
   },
   "dependencies": {
     "tesseract.js": "6.0.1"
