@@ -42,6 +42,6 @@
 
 `dist/` 是静态网站，可以直接用 HTTP 服务运行。运行时不需要 Python 或 API 密钥。开发检查使用 Node.js，OCR 测试使用 package.json 中的 Tesseract.js。
 
-资料处理顺序：`build-library.py` → `ocr-references.cjs` → `repair-exam-ocr.cjs` → `refine-library.py` → `compress-reference-assets.py`。Python 使用 pdfplumber、pypdfium2、Pillow。构建脚本中的源资料路径指向用户提供的本地目录。原始 PDF 不被修改。
+资料处理顺序：`build-library.py` → `ocr-references.cjs` → `repair-exam-ocr.cjs` → `refine-library.py` → `compress-reference-assets.py` → `fit-hosting-assets.py`。Python 使用 pdfplumber、pypdfium2、Pillow。构建脚本中的源资料路径指向用户提供的本地目录。原始 PDF 不被修改。
 
 `scripts/cache/` 存放 OCR 与测试中间文件，不发布、不进入 Git。实际照片集成测试依赖本机生成的测试图片与 OCR 缓存；普通 `npm run check` 可在源码检出后运行。

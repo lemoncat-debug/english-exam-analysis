@@ -2,6 +2,7 @@
 import json,re,sys,csv
 from pathlib import Path
 import pdfplumber,pypdfium2 as pdfium
+from PIL import Image
 sys.stdout.reconfigure(encoding='utf-8')
 ROOT=Path(__file__).resolve().parent.parent
 OUT=ROOT/'dist/library';OUT.mkdir(parents=True,exist_ok=True)
@@ -47,6 +48,10 @@ for file in sorted(EXAMS.glob('20*年考研英语二真题.pdf')):
  print(json.dumps({'year':year,'examPages':len(pages),'referencePages':count}),flush=True)
 (OUT/'catalog.json').write_text(json.dumps(catalog,ensure_ascii=False,separators=(',',':')),encoding='utf-8')
 (ROOT/'scripts/cache/reference-jobs.json').write_text(json.dumps(jobs),encoding='utf-8')
+sizes={}
+for file in OUT.glob('*/exam-*.jpg'):
+ with Image.open(file) as im:sizes[file.relative_to(ROOT/'dist').as_posix()]={'w':im.width,'h':im.height}
+(ROOT/'scripts/cache/image-sizes.json').write_text(json.dumps(sizes),encoding='utf-8')
 # Bundle only words that appear in this library, plus their likely base forms.
 wanted=set(tokens)
 for t in tokens:
