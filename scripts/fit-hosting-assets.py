@@ -6,7 +6,7 @@ import json
 ROOT=Path(__file__).resolve().parent.parent.resolve();CACHE=ROOT/'scripts/cache/exam-jpg';CACHE.mkdir(exist_ok=True)
 refs=list((ROOT/'scripts/cache/reference-jpg').glob('*/*.jpg'))
 exams=list((ROOT/'dist/library').glob('*/exam-*.jpg'))
-jobs=[(p,ROOT/'dist/library'/p.parent.name/p.with_suffix('.webp').name,64,False) for p in refs]+[(p,p.with_suffix('.webp'),78,True) for p in exams]
+jobs=[(p,ROOT/'dist/library'/p.parent.name/p.with_suffix('.webp').name,54,False) for p in refs]+[(p,p.with_suffix('.webp'),78,True) for p in exams]
 def process(job):
  source,target,quality,move=job
  assert ROOT in source.resolve().parents and ROOT in target.resolve().parents
