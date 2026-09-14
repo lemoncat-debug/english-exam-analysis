@@ -22,9 +22,9 @@ Service Worker 有界缓存已加载资源，离线可查看已缓存内容，�
 
 ## 翻译输入与接续
 
-238 页，4,561 个句段，66,820 个词位。已有 60 条旧精读译文保留为 legacy-import，Luna Max 已完成 1,122 个新句段；2010—2014 全年 14 页已有本地译文，其余 3,379 句段待生成。2010 第 3、5、7、9 页另保留相应旧解析译文。输入覆盖率不是翻译完成率。所有页都有文字层，不代表每个提取词都经过人工审校。
+238 页，4,561 个句段，66,820 个词位。已有 60 条旧精读译文保留为 legacy-import，Luna Max 已完成 1,368 个新句段；2010—2015 全年 14 页已有本地译文，其余 3,133 句段待生成。2010 第 3、5、7、9 页另保留相应旧解析译文。输入覆盖率不是翻译完成率。所有页都有文字层，不代表每个提取词都经过人工审校。
 
-用户已明确选择 GPT-5.6 Luna Max，当前实际 Luna 生成数为 1,122，实际 API 请求数为 0，不存在可报告的 API token 或费用。
+用户已明确选择 GPT-5.6 Luna Max，当前实际 Luna 生成数为 1,368，实际 API 请求数为 0，不存在可报告的 API token 或费用。
 
 按 translation-work/CONTINUE.md 接续：prepare-translations.cjs 生成按原文哈希寻址的任务；Luna Max 将结果写到 completed/<taskId>.json；merge-translations.cjs 校验并合并到 dist/library/translations/<year>.json。保留真实模型、时间、源哈希和版本；原文不变时复用已完成结果，源变化只重新生成受影响批次。校验 ID、原文、年份、页码、wordIndex、surface、词位覆盖和语境义，拒绝错误映射或缺词。
 
