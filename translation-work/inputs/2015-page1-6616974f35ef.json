@@ -5,7 +5,7 @@
   "page": 1,
   "section": "完形填空",
   "sourceTextHash": "6616974f35efd9cb66a12a837d264dc6238d807b0d02edb564f534ab500c29b6",
-  "instruction": "Translate every sentence and every English word occurrence in context. Preserve sentenceId, sourceTextHash, wordIndex and surface exactly. Fill translation, grammar and contextual token fields. Do not claim API usage. Output a JSON object with schemaVersion, taskId, sourceTextHash, generationModel, generatedAt, sentences. Use GPT-5.6 Terra only after the user confirms the task model switch.",
+  "instruction": "Translate every sentence and every English word occurrence in context. Preserve sentenceId, sourceTextHash, wordIndex and surface exactly. Fill translation, grammar and contextual token fields. Do not claim API usage. Output a JSON object with schemaVersion, taskId, sourceTextHash, generationModel, generatedAt, sentences. Use GPT-5.6 Luna Max as selected by the user.",
   "sentences": [
     {
       "schemaVersion": 1,

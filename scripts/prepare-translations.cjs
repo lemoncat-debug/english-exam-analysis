@@ -3,7 +3,7 @@ const fs=require('fs'),path=require('path'),crypto=require('crypto'),vm=require(
 const ROOT=path.resolve(__dirname,'..'),LIB=path.join(ROOT,'dist/library'),OUT=path.join(ROOT,'translation-work');
 const hash=s=>crypto.createHash('sha256').update(s).digest('hex');
 fs.mkdirSync(OUT,{recursive:true});fs.mkdirSync(path.join(OUT,'inputs'),{recursive:true});fs.mkdirSync(path.join(OUT,'completed'),{recursive:true});fs.mkdirSync(path.join(LIB,'translations'),{recursive:true});
-const manifest={schemaVersion:1,translationVersion:'flow-1',requestedModel:'gpt-5.6-terra',generationMethod:'Codex model selected by user; no API',createdAt:new Date().toISOString(),tasks:[],unextractable:[]};
+const manifest={schemaVersion:1,translationVersion:'flow-1',requestedModel:'gpt-5.6-luna',generationMethod:'Codex model selected by user; no API',createdAt:new Date().toISOString(),tasks:[],unextractable:[]};
 const ctx={window:{}};vm.runInNewContext(fs.readFileSync(path.join(ROOT,'dist/2010/data.js'),'utf8'),ctx);const legacy=ctx.window.STUDY_DATA;
 const norm=s=>s.toLowerCase().replace(/[^a-z0-9]/g,'');
 let total=0,migrated=0,words=0;
@@ -20,7 +20,7 @@ for(let year=2010;year<=2026;year++){
    sentences.push(item);total++;words+=slice.length;if(old)migrated++;if(next&&next.y-w.y>2)paragraph++;start=i+1;
   }
   const group=sentences.filter(s=>s.page===p.page),inputHash=hash(JSON.stringify(group.map(s=>[s.sentenceId,s.sourceTextHash]))),taskId=year+'-page'+p.page+'-'+inputHash.slice(0,12),file='inputs/'+taskId+'.json';
-  const input={schemaVersion:1,taskId,year,page:p.page,section:p.section,sourceTextHash:inputHash,instruction:'Translate every sentence and every English word occurrence in context. Preserve sentenceId, sourceTextHash, wordIndex and surface exactly. Fill translation, grammar and contextual token fields. Do not claim API usage. Output a JSON object with schemaVersion, taskId, sourceTextHash, generationModel, generatedAt, sentences. Use GPT-5.6 Terra only after the user confirms the task model switch.',sentences:group};
+  const input={schemaVersion:1,taskId,year,page:p.page,section:p.section,sourceTextHash:inputHash,instruction:'Translate every sentence and every English word occurrence in context. Preserve sentenceId, sourceTextHash, wordIndex and surface exactly. Fill translation, grammar and contextual token fields. Do not claim API usage. Output a JSON object with schemaVersion, taskId, sourceTextHash, generationModel, generatedAt, sentences. Use GPT-5.6 Luna Max as selected by the user.',sentences:group};
   fs.writeFileSync(path.join(OUT,file),JSON.stringify(input,null,2));manifest.tasks.push({taskId,year,page:p.page,file,sourceTextHash:inputHash,sentences:group.length,wordPositions:group.reduce((n,s)=>n+s.tokens.length,0),state:fs.existsSync(path.join(OUT,'completed',taskId+'.json'))?'awaiting-validation':'pending'});
  }
  const target=path.join(LIB,'translations',year+'.json');
@@ -30,4 +30,5 @@ for(let year=2010;year<=2026;year++){
 }
 fs.writeFileSync(path.join(OUT,'manifest.json'),JSON.stringify(manifest,null,2));
 const answers={};for(const q of legacy.questions)answers['2010-'+q.id]={answer:q.answer,verified:true,source:'2010年张剑英语二解析.pdf · 已有精读版核验数据',pdfPage:q.refPage,evidence:q.evidence};fs.writeFileSync(path.join(LIB,'answer-keys.json'),JSON.stringify({schemaVersion:1,answers}));
-const report={pages:manifest.tasks.length,sentences:total,wordPositions:words,legacyExactTranslations:migrated,unextractable:manifest.unextractable,apiRequests:0,generatedByTerra:0};fs.writeFileSync(path.join(OUT,'coverage.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report));
+let generatedLuna=0;for(let year=2010;year<=2026;year++){const data=JSON.parse(fs.readFileSync(path.join(LIB,'translations',year+'.json'),'utf8'));generatedLuna+=data.sentences.filter(s=>s.status==='generated'&&s.generationModel==='gpt-5.6-luna').length}
+const report={pages:manifest.tasks.length,sentences:total,wordPositions:words,legacyExactTranslations:migrated,unextractable:manifest.unextractable,apiRequests:0,generatedByLuna:generatedLuna};fs.writeFileSync(path.join(OUT,'coverage.json'),JSON.stringify(report,null,2));console.log(JSON.stringify(report));

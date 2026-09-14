@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "translationVersion": "flow-1",
-  "requestedModel": "gpt-5.6-terra",
+  "requestedModel": "gpt-5.6-luna",
   "generationMethod": "Codex model selected by user; no API",
-  "createdAt": "2026-09-14T12:54:08.483Z",
+  "createdAt": "2026-09-14T18:02:39.144Z",
   "tasks": [
     {
       "taskId": "2010-page1-b3c3f873deb6",
@@ -13,7 +13,7 @@
       "sourceTextHash": "b3c3f873deb67d72bfdb50749e311291c4ae9976940fe4440d08980e58203c9f",
       "sentences": 16,
       "wordPositions": 371,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2010-page2-f082f977f24d",
@@ -23,7 +23,7 @@
       "sourceTextHash": "f082f977f24d50dd67dfa1500379e5af000dbc9b53e427386045fb94fb5d9068",
       "sentences": 23,
       "wordPositions": 224,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2010-page3-9061519e0adc",
@@ -33,7 +33,7 @@
       "sourceTextHash": "9061519e0adc7684eaaaa8b1f0c1399678b0385a39e8a084340eb2019481076d",
       "sentences": 21,
       "wordPositions": 395,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2010-page4-2d33b356f5f5",
