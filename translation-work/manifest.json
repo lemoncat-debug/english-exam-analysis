@@ -293,7 +293,7 @@
       "sourceTextHash": "2c7ee51e28645f7c722d72a5c30aa625f7699b2876eb7efc6b7d4e510e97d2e2",
       "sentences": 22,
       "wordPositions": 367,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2012-page2-c0fbff80ce00",
@@ -303,7 +303,7 @@
       "sourceTextHash": "c0fbff80ce0083b3fa2f98446218603be240037c3a1c2c7576eb1251d9e6986f",
       "sentences": 23,
       "wordPositions": 229,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2012-page3-b5e0bdb55726",
@@ -313,7 +313,7 @@
       "sourceTextHash": "b5e0bdb55726b40324fc35c8553df2e29b546b979d813d8fbe6f2584aa70cd5e",
       "sentences": 21,
       "wordPositions": 405,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2012-page4-734dd39ebc9b",
@@ -323,7 +323,7 @@
       "sourceTextHash": "734dd39ebc9b5f68f1e3c8ebc759dbc80b1c7d9fa7e7f48f4a634ae09c9c8d12",
       "sentences": 9,
       "wordPositions": 194,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2012-page5-3cc6e134253b",
@@ -333,7 +333,7 @@
       "sourceTextHash": "3cc6e134253b6a24b47e8989067df1b70bc871602049c828ff74c32dd1f425a6",
       "sentences": 18,
       "wordPositions": 413,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2012-page6-2fc2e07274c9",
@@ -343,7 +343,7 @@
       "sourceTextHash": "2fc2e07274c97ea8fa9cda38a037bb58973acc1f1f266bac3745cadd1ed66cba",
       "sentences": 14,
       "wordPositions": 208,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2012-page7-8d9044a313ae",
@@ -353,7 +353,7 @@
       "sourceTextHash": "8d9044a313aee73b20f2b322ed8dfca8bc662f989e5d946bbb4690c26e2736dc",
       "sentences": 25,
       "wordPositions": 410,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2012-page8-4c4015d23342",
@@ -363,7 +363,7 @@
       "sourceTextHash": "4c4015d23342ee086081617ee8489f779b278257bd982f97eb500d86fbed3574",
       "sentences": 11,
       "wordPositions": 172,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2012-page9-24f13caa5ebd",
@@ -373,7 +373,7 @@
       "sourceTextHash": "24f13caa5ebd6e4780d88d8e6bda08887b232ce8e0a6407eea009d59fd4682f4",
       "sentences": 19,
       "wordPositions": 416,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2012-page10-9dbecc8a1b22",
@@ -383,7 +383,7 @@
       "sourceTextHash": "9dbecc8a1b22102488d91d23dc678ac86abb91fcc6fdf72ff3bcbb8521793407",
       "sentences": 11,
       "wordPositions": 194,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2012-page11-afbb39a4cac1",
@@ -393,7 +393,7 @@
       "sourceTextHash": "afbb39a4cac11e3cf46fd600e9c7d4410f46a2b77814901d1dd605e0dc8001eb",
       "sentences": 22,
       "wordPositions": 424,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2012-page12-05a71650cabc",
@@ -403,7 +403,7 @@
       "sourceTextHash": "05a71650cabcdd055ca68bfbe0d9b07f7d246ad157eb187b4ec4aa169df7b0ba",
       "sentences": 16,
       "wordPositions": 259,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2012-page13-64d4d36dfb27",
@@ -413,7 +413,7 @@
       "sourceTextHash": "64d4d36dfb27a87563600f9e93ee758bc5faf3adffdbad026af0ba9ece667196",
       "sentences": 10,
       "wordPositions": 175,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2012-page14-da1836fb7fc8",
@@ -423,7 +423,7 @@
       "sourceTextHash": "da1836fb7fc818c59f25a90ad9d313453e4a70a0ba99678011d026ea2ba6729e",
       "sentences": 17,
       "wordPositions": 146,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2013-page1-faed471de164",
@@ -433,7 +433,7 @@
       "sourceTextHash": "faed471de16456071b51f15e108fb634c6bf58e050f1a178c31ba0097ef22cd8",
       "sentences": 19,
       "wordPositions": 385,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2013-page2-727c1e1bc229",
@@ -443,7 +443,7 @@
       "sourceTextHash": "727c1e1bc2296b690b6625e338037fc0e301c39bdf12e2b13a9ec5221e9c1b68",
       "sentences": 23,
       "wordPositions": 228,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2013-page3-94023318a64f",
@@ -453,7 +453,7 @@
       "sourceTextHash": "94023318a64fa40f4ade483fb1a053b2fd3aa4afc6cfbe9045ce0d6252e18ed3",
       "sentences": 18,
       "wordPositions": 385,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2013-page4-79e9cc0b6b79",
@@ -463,7 +463,7 @@
       "sourceTextHash": "79e9cc0b6b7910490370cf9d0082b83028653082a44ffa0a7cd410d22fe2ac1a",
       "sentences": 15,
       "wordPositions": 186,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2013-page5-fe656a66e6ea",
@@ -473,7 +473,7 @@
       "sourceTextHash": "fe656a66e6eaed3d4aa11219fbff9f3175fdc7bdcb3bfdc0fd48b7940e5ec47b",
       "sentences": 23,
       "wordPositions": 381,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2013-page6-34bfbee5886d",
@@ -483,7 +483,7 @@
       "sourceTextHash": "34bfbee5886dc8879978a2e790cd5adfcf5e84e84a3fea850f7cd10db14b0c3d",
       "sentences": 10,
       "wordPositions": 172,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2013-page7-dceeb7bc64b2",
@@ -493,7 +493,7 @@
       "sourceTextHash": "dceeb7bc64b2b8fd64fc15fa3d1e398b2b42b57212affd6745683364496733df",
       "sentences": 18,
       "wordPositions": 387,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2013-page8-bcb6b9e92ebe",
@@ -503,7 +503,7 @@
       "sourceTextHash": "bcb6b9e92ebed348cb6a9b9108878be895f196e3d5b4178c4ebcb4619d47bbf8",
       "sentences": 10,
       "wordPositions": 152,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2013-page9-83137f4853a0",
