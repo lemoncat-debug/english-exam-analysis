@@ -43,7 +43,7 @@
       "sourceTextHash": "2d33b356f5f59111867441e20c0e244a86441d99fe54e6315065187801108fbb",
       "sentences": 14,
       "wordPositions": 242,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2010-page5-f92dcd9a9cf5",
@@ -63,7 +63,7 @@
       "sourceTextHash": "36d491211b78b5bfe69ef72541772af40236dc83d5e9f4fdedf1312705df2550",
       "sentences": 16,
       "wordPositions": 219,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2010-page7-a0a24e5170c4",
@@ -83,7 +83,7 @@
       "sourceTextHash": "63ef29f99cba22af3687764fa855a96d19cedeff29b605d6fcdc118b786fae7a",
       "sentences": 11,
       "wordPositions": 159,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2010-page9-5e1f58327f53",
@@ -103,7 +103,7 @@
       "sourceTextHash": "88f1da8f0dc1183536420414d24050b9b115222fd46a0d3c1e173d5101a081ed",
       "sentences": 10,
       "wordPositions": 241,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2010-page11-1ced3b352ce3",
@@ -113,7 +113,7 @@
       "sourceTextHash": "1ced3b352ce325cceddbbd1f25333392de9bc673a030e4ce4381bc013a747833",
       "sentences": 22,
       "wordPositions": 400,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2010-page12-c99a21d48b38",
@@ -123,7 +123,7 @@
       "sourceTextHash": "c99a21d48b380f9786a131a27ccd42176345ac36dec304a280e66acca5485707",
       "sentences": 16,
       "wordPositions": 261,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2010-page13-08269a7d4baa",
@@ -133,7 +133,7 @@
       "sourceTextHash": "08269a7d4baa5585dc0173d834b4aefaf4c0e50f7c8afc5a40c3f94a083a19f7",
       "sentences": 14,
       "wordPositions": 180,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2010-page14-8df1f29de240",
@@ -143,7 +143,7 @@
       "sourceTextHash": "8df1f29de240433e8dcd7a6b658a57e0c67d70eb662aac8c543088af0fe9f602",
       "sentences": 18,
       "wordPositions": 165,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2011-page1-c0b5c5536163",
