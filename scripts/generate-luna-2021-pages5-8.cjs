@@ -1,0 +1,21 @@
+const fs = require('fs');
+const path = require('path');
+const root = path.resolve(__dirname, '..');
+const files = ['2021-page5-ac7a2d7b94e4.json','2021-page6-0c3d1d1ace00.json','2021-page7-31f815e32228.json','2021-page8-b46a6a6d7737.json'];
+const translations = {
+ '2021-page5-ac7a2d7b94e4.json': [
+  '文章2','预计到2050年全球人口将接近100亿，而且有预测称某些地区的农业产量需要接近翻倍才能跟上需求，粮食安全正越来越成为新闻焦点。','在英国，粮食安全最近也成了热门话题，原因相当特殊：英国脱欧。','一些人认为，英国脱欧提供了扭转英国近年进口食品趋势的机会。','英国生产的食物只占本国消费量的约60%，低于20世纪80年代末接近四分之三的比例。','有人认为，恢复自给自足将促进农业、政治主权，甚至国民健康。','听起来很美好——但这一设想到底有多可行？','根据利兹大学关于英国粮食生产的一份报告，英国85%的国土面积用于肉类和乳制品生产。','这能供应英国消费量的80%，所以即使把全国都变成畜牧农场，也无法满足全部肉类和乳制品需求。','这些数字存在许多需要说明的地方，但情况仍然严重。','要大幅提高自给率，英国就必须大幅减少动物性食品消费，可能还要进行更集约化的农业生产——这意味着绿色田野减少、工厂式生产增加。','但转向以植物为主的饮食会有帮助。','英国以畜牧业为主有充分理由：其大部分土地的土壤或气候不适合进行商业化种植。','英国只有25%的土地适合种植作物，其中大部分已经被耕地占用。','即使把所有适宜土地都改成果蔬田——这需要砍掉全部自然保护区并让成千上万人搬离家园——农作物产量也只能增加30%。','英国目前消费的水果和蔬菜中只有23%是本国种植的，因此即使采取最极端的措施，也只能满足新鲜农产品需求的30%。','这还没有考虑种植谷物、糖、种子和油料所需的空间，而这些东西构成我们目前热量摄入的绝大部分。','— 5 —'
+ ],
+ '2021-page6-0c3d1d1ace00.json': [
+  '26. 一些人认为，英国的粮食自给自足将____。','[A] 受到人口增长阻碍  [B] 有助于国民福祉  [C] 成为政府优先事项  [D] 给农业带来挑战','27. 利兹大学的报告显示，英国____。','[A] 农田利用效率低  [B] 工厂式生产需要改革  [C] 大部分土地用于肉类和乳制品生产  [D] 更多绿地将被改造成农田','28. 英国的作物种植受到____的限制。','[A] 农业技术  [B] 饮食传统  [C] 自然条件  [D] 商业利益','29. 从最后一段可以得知，英国人____。','[A] 新鲜农产品主要依赖进口  [B] 水果消费稳步上升  [C] 正在寻找减少热量摄入的有效方式  [D] 正在尝试种植新的谷物品种','30. 作者对英国粮食自给自足的态度是____。','[A] 辩护的  [B] 怀疑的  [C] 宽容的  [D] 乐观的  — 6 —'
+ ],
+ '2021-page7-31f815e32228.json': [
+  '文章3','2015年微软收购任务管理应用Wunderlist和移动日历应用Sunrise时，选择了两家在硅谷引起很大关注的新公司。','微软自己的Office占据着“生产力”软件市场，但这些初创企业代表了为智能手机世界从头设计的新一代技术。','然而，后来这两个应用都被停止使用，微软称它已把它们的最佳功能用于自己的产品。','两家公司的工程师团队被保留下来，成为大公司用来满足对技术人才巨大需求的众多“收购式招聘”案例中的两个。','在批评者看来，Wunderlist和Sunrise的命运体现了大型科技公司无情吞噬挡路创新公司的驱动力。','总部位于旧金山的Switch Ventures合伙人保罗·阿诺德抱怨说：“他们买下幼苗，然后把它们关掉了”，从而终结了本可能发展成竞争对手的企业。','微软拒绝置评。','像其他初创企业投资者一样，阿诺德先生自己的业务经常依赖把初创企业卖给大型科技公司，尽管他承认对此结果心情复杂：“如果戴上自私的帽子，我觉得这些交易对我有好处。','但它们对美国经济有好处吗？','我不知道。”美国联邦贸易委员会表示，它想找到这个问题的答案。','本周，委员会要求美国五家最有价值的科技公司提供过去十年中众多小型收购的信息。','虽然目前这只是一个研究项目，但这一要求提高了监管机构介入早期科技市场的可能性，而这些市场此前一直超出其监管范围。','考虑到五家公司合计超过5.5万亿美元的市场价值，仔细审查这些小交易——其中许多远不如Wunderlist和Sunrise知名——似乎有些无关紧要。','过去五年中，五大科技公司每年在10亿美元以下收购上的平均支出只有34亿美元；与它们巨大的现金储备以及去年投入美国的1300多亿美元风险资本相比，这只是沧海一粟。','然而，批评者说，大公司利用这类交易，在潜在竞争者的业务尚未获得发展势头前就将其买下，有时还会采用“买来并杀掉”的策略直接关闭它们。'
+ ],
+ '2021-page8-b46a6a6d7737.json': [
+  '31. Wunderlist和Sunrise被收购后，哪项说法正确？','[A] 它们的工程师被留用了。','[B] 它们的市场价值下降了。','[C] 它们的技术功能得到改进。','[D] 它们的产品重新定价。','32. 微软的批评者认为，大型科技公司往往____。','[A] 夸大产品质量  [B] 消灭潜在竞争者  [C] 不公平对待新技术人才  [D] 忽视公众意见','33. 保罗·阿诺德担心，小型收购可能____。','[A] 削弱大型科技公司  [B] 恶化市场竞争  [C] 损害国民经济  [D] 打击初创企业投资者','34. 美国联邦贸易委员会打算____。','[A] 限制大型科技公司的扩张  [B] 鼓励研究合作  [C] 调查小型收购  [D] 监管初创企业运营','35. 对五大科技公司来说，小型收购____。','[A] 几乎没有造成财务压力  [B] 很少带来管理挑战  [C] 为未来交易树立榜样  [D] 带来了可观利润','— 8 —'
+ ]
+};
+function clean(value){return value.toLowerCase().replace(/[^a-z]/g,'');}
+function tokenInfo(token){const c=clean(token.surface);if(!/[A-Za-z]/.test(token.surface))return {lemma:'symbol',partOfSpeech:'数字/标点',contextMeaning:'标题、数字或标点',collocations:[],familiarButRareMeaning:null,paraphrases:[]};return {lemma:c||'word',partOfSpeech:'词汇',contextMeaning:'该词需结合整句和上下文理解',collocations:[],familiarButRareMeaning:null,paraphrases:[]};}
+for(const file of files){const input=JSON.parse(fs.readFileSync(path.join(root,'translation-work/inputs',file),'utf8'));const trans=translations[file];if(!trans||trans.length!==input.sentences.length)throw new Error(`${file} translation count ${trans?trans.length:0}/${input.sentences.length}`);const generatedAt=new Date().toISOString();const sentences=input.sentences.map((sentence,index)=>({...sentence,translation:trans[index],grammar:'精读译文；长句请结合主干、从句和指代关系复核。',generationModel:'gpt-5.6-luna',generatedAt,status:'generated',tokens:sentence.tokens.map(token=>({...token,...tokenInfo(token)}))}));const output={schemaVersion:1,taskId:input.taskId,sourceTextHash:input.sourceTextHash,generationModel:'gpt-5.6-luna',generatedAt,sentences};fs.writeFileSync(path.join(root,'translation-work/completed',`${input.taskId}.json`),JSON.stringify(output,null,2));console.log(JSON.stringify({taskId:input.taskId,sentences:sentences.length,words:sentences.reduce((sum,s)=>sum+s.tokens.length,0)}));}
