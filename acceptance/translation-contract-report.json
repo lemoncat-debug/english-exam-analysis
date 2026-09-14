@@ -4,9 +4,9 @@
   "tasks": 238,
   "sentences": 4561,
   "wordPositions": 66820,
-  "pending": 2355,
+  "pending": 2099,
   "legacyImported": 60,
-  "realLunaGenerations": 2146,
+  "realLunaGenerations": 2402,
   "realApiRequests": 0,
   "rejectedBadFixtures": 6
 }
