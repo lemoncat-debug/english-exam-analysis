@@ -1,0 +1,82 @@
+{
+  "browser": "152.0.7977.78",
+  "sizes": [
+    {
+      "width": 390,
+      "height": 844,
+      "modeButtonsVisible": true,
+      "horizontalOverflow": false,
+      "errors": []
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "modeButtonsVisible": true,
+      "horizontalOverflow": false,
+      "errors": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "modeButtonsVisible": true,
+      "horizontalOverflow": false,
+      "errors": []
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "modeButtonsVisible": true,
+      "horizontalOverflow": false,
+      "errors": []
+    },
+    {
+      "width": 1366,
+      "height": 768,
+      "modeButtonsVisible": true,
+      "horizontalOverflow": false,
+      "errors": []
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "modeButtonsVisible": true,
+      "horizontalOverflow": false,
+      "errors": []
+    }
+  ],
+  "checks": [
+    {
+      "name": "20 word + 10 sentence clicks",
+      "aiRequests": [],
+      "network": []
+    },
+    {
+      "name": "SVG pointer and keyboard",
+      "paint": {
+        "fill": "rgba(152, 185, 130, 0.18)",
+        "stroke": "rgb(82, 123, 96)"
+      }
+    },
+    {
+      "name": "confirmed answer, note, per-question pasted conversation persistence",
+      "passed": true
+    },
+    {
+      "name": "vocabulary persistence",
+      "passed": true
+    },
+    {
+      "name": "source virtualization",
+      "decodedImages": 3
+    },
+    {
+      "name": "missing reference honest state",
+      "passed": true
+    },
+    {
+      "name": "200% CSS zoom quickbar",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

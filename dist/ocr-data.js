@@ -1,0 +1,2 @@
+let languagePromise;
+async function loadEnglishData(){return languagePromise??=(async()=>{const parts=await Promise.all([0,1,2,3].map(async i=>{const {default:data}=await import('./vendor/english-data-'+i+'.js');return Uint8Array.from(atob(data),c=>c.charCodeAt(0))}));const result=new Uint8Array(parts.reduce((n,p)=>n+p.length,0));let offset=0;for(const p of parts){result.set(p,offset);offset+=p.length}if(result.length!==10923060||result[0]!==31||result[1]!==139)throw Error('OCR 字库不完整，请重新加载');return result})().catch(e=>{languagePromise=null;throw e})}

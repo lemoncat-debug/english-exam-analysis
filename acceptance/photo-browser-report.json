@@ -1,0 +1,19 @@
+{
+  "pass": true,
+  "source": "IMG_20260911_002733.jpg",
+  "result": [
+    {
+      "name": "IMG_20260911_002733.jpg",
+      "status": "已对应 2010 · 第 4 页",
+      "pageId": "2010-4",
+      "angle": 270,
+      "wordBoxes": 221
+    }
+  ],
+  "paint": "rgba(152, 185, 130, 0.18)",
+  "answersAutomatic": false,
+  "unconfirmedNotScored": true,
+  "manualConfirmedC22Wrong": true,
+  "photoPersists": true,
+  "errors": []
+}

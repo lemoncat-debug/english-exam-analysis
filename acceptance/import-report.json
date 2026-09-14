@@ -1,0 +1,22 @@
+{
+  "checks": [
+    "damaged PDF rejected",
+    {
+      "name": "cancel with resume checkpoint",
+      "nextPage": 3
+    },
+    {
+      "name": "reference PDF import",
+      "source": "2010年张剑英语二解析.pdf",
+      "pages": 56,
+      "textSources": [
+        "ocr-english-only"
+      ]
+    },
+    "imported PDF continuous reading",
+    "PDF persists after refresh",
+    "damaged photo recovered",
+    "offline local lookup"
+  ],
+  "errors": []
+}

@@ -1,0 +1,6 @@
+.word{appearance:none;-webkit-appearance:none;background:transparent;color:inherit;-webkit-text-fill-color:currentColor;box-shadow:none;line-height:inherit}
+.word.selected,.word:hover{background:rgba(156,194,128,.25);color:#233d37;-webkit-text-fill-color:#233d37;text-decoration:underline}
+.word:focus-visible{outline:2px solid #48796a;outline-offset:2px}
+.image-word{fill:transparent!important;stroke:transparent;forced-color-adjust:none}
+.image-word:hover,.image-word.selected,.image-word:focus{fill:rgba(152,185,130,.18)!important;stroke:#527b60!important;stroke-width:.12}
+.image-word:focus-visible{stroke-width:.23;outline:0}

@@ -1,11 +1,17 @@
 {
   "name": "kaoyan-english-study",
-  "version": "3.0.0",
+  "version": "4.0.0-pretranslation",
   "private": true,
   "scripts": {
     "check": "node scripts/verify-universal.cjs && node scripts/verify-matching.cjs",
     "test:photos": "node scripts/test-photo-matching.cjs",
-    "build:library": "python scripts/build-library.py"
+    "build:library": "python scripts/build-library.py",
+    "test:flow": "node scripts/test-flow.cjs",
+    "test:imports": "node scripts/test-imports.cjs",
+    "test:photo-browser": "node scripts/test-photo-browser.cjs",
+    "translations:prepare": "node scripts/prepare-translations.cjs",
+    "translations:merge": "node scripts/merge-translations.cjs",
+    "translations:check": "node scripts/test-translation-contract.cjs"
   },
   "dependencies": {
     "tesseract.js": "6.0.1"

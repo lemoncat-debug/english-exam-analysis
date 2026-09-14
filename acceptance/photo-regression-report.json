@@ -1,0 +1,524 @@
+[
+  {
+    "expected": "2010-1",
+    "found": "2010-1",
+    "rotation": 0,
+    "score": 0.991,
+    "margin": 0.954,
+    "words": 364,
+    "file": "IMG_20260911_002703.jpg",
+    "correctiveRotation": 0,
+    "questions": [
+      {
+        "number": 1,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 2,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 3,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 4,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 5,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 6,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 7,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 8,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 9,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 10,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 11,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 12,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 13,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 14,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 15,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 16,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 17,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 18,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 19,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 20,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      }
+    ],
+    "note": "印刷文字与页码匹配通过；未声称自动识别手写答案"
+  },
+  {
+    "expected": "2010-2",
+    "found": "2010-2",
+    "rotation": 0,
+    "score": 0.96,
+    "margin": 0.694,
+    "words": 214,
+    "file": "IMG_20260911_002720.jpg",
+    "correctiveRotation": 0,
+    "questions": [
+      {
+        "number": 1,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 2,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 3,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 4,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 5,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 6,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 7,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 8,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 9,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 10,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 11,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 12,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 13,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 14,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 15,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 16,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 17,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 18,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 19,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 20,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      }
+    ],
+    "note": "印刷文字与页码匹配通过；未声称自动识别手写答案"
+  },
+  {
+    "expected": "2010-3",
+    "found": "2010-3",
+    "rotation": 0,
+    "score": 0.997,
+    "margin": 0.913,
+    "words": 385,
+    "file": "IMG_20260911_002727.jpg",
+    "correctiveRotation": 270,
+    "questions": [],
+    "note": "印刷文字与页码匹配通过；未声称自动识别手写答案"
+  },
+  {
+    "expected": "2010-4",
+    "found": "2010-4",
+    "rotation": 0,
+    "score": 0.996,
+    "margin": 0.867,
+    "words": 228,
+    "file": "IMG_20260911_002733.jpg",
+    "correctiveRotation": 270,
+    "questions": [
+      {
+        "number": 21,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 22,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 23,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 24,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 25,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      }
+    ],
+    "note": "印刷文字与页码匹配通过；未声称自动识别手写答案"
+  },
+  {
+    "expected": "2010-5",
+    "found": "2010-5",
+    "rotation": 0,
+    "score": 0.997,
+    "margin": 0.945,
+    "words": 378,
+    "file": "IMG_20260911_002737.jpg",
+    "correctiveRotation": 270,
+    "questions": [],
+    "note": "印刷文字与页码匹配通过；未声称自动识别手写答案"
+  },
+  {
+    "expected": "2010-6",
+    "found": "2010-6",
+    "rotation": 0,
+    "score": 1,
+    "margin": 0.915,
+    "words": 207,
+    "file": "IMG_20260911_002742.jpg",
+    "correctiveRotation": 270,
+    "questions": [
+      {
+        "number": 26,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 27,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 28,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 29,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 30,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      }
+    ],
+    "note": "印刷文字与页码匹配通过；未声称自动识别手写答案"
+  },
+  {
+    "expected": "2010-7",
+    "found": "2010-7",
+    "rotation": 0,
+    "score": 0.996,
+    "margin": 0.978,
+    "words": 395,
+    "file": "IMG_20260911_002746.jpg",
+    "correctiveRotation": 270,
+    "questions": [],
+    "note": "印刷文字与页码匹配通过；未声称自动识别手写答案"
+  },
+  {
+    "expected": "2010-8",
+    "found": "2010-8",
+    "rotation": 0,
+    "score": 0.986,
+    "margin": 0.926,
+    "words": 148,
+    "file": "IMG_20260911_002753.jpg",
+    "correctiveRotation": 270,
+    "questions": [
+      {
+        "number": 31,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 32,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 33,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 34,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 35,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      }
+    ],
+    "note": "印刷文字与页码匹配通过；未声称自动识别手写答案"
+  },
+  {
+    "expected": "2010-9",
+    "found": "2010-9",
+    "rotation": 0,
+    "score": 1,
+    "margin": 0.914,
+    "words": 399,
+    "file": "IMG_20260911_002757.jpg",
+    "correctiveRotation": 270,
+    "questions": [],
+    "note": "印刷文字与页码匹配通过；未声称自动识别手写答案"
+  },
+  {
+    "expected": "2010-10",
+    "found": "2010-10",
+    "rotation": 0,
+    "score": 0.982,
+    "margin": 0.794,
+    "words": 244,
+    "file": "IMG_20260911_002802.jpg",
+    "correctiveRotation": 270,
+    "questions": [
+      {
+        "number": 36,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 37,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 38,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 39,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      },
+      {
+        "number": 40,
+        "recognizedAnswer": null,
+        "confidence": 0,
+        "requiresManualConfirmation": true
+      }
+    ],
+    "note": "印刷文字与页码匹配通过；未声称自动识别手写答案"
+  },
+  {
+    "expected": "2011-3",
+    "found": "2011-3",
+    "rotation": 0,
+    "score": 0.997,
+    "margin": 0.945,
+    "words": 384,
+    "kind": "cross-year"
+  },
+  {
+    "expected": "2021-3",
+    "found": "2021-3",
+    "rotation": 0,
+    "score": 1,
+    "margin": 0.954,
+    "words": 423,
+    "kind": "cross-year"
+  },
+  {
+    "expected": "2022-4",
+    "found": "2022-4",
+    "rotation": 0,
+    "score": 0.981,
+    "margin": 0.912,
+    "words": 162,
+    "kind": "cross-year"
+  },
+  {
+    "expected": "2026-3",
+    "found": "2026-3",
+    "rotation": 0,
+    "score": 0.999,
+    "margin": 0.985,
+    "words": 415,
+    "kind": "cross-year"
+  }
+]

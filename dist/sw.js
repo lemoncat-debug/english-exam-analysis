@@ -1,0 +1,4 @@
+const CACHE='english-flow-assets-v1';
+self.addEventListener('install',()=>self.skipWaiting());
+self.addEventListener('activate',e=>e.waitUntil(self.clients.claim()));
+self.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.origin!==location.origin||u.pathname.startsWith('/api/')||u.pathname.includes('/auth/'))return;e.respondWith((async()=>{const cache=await caches.open(CACHE);try{const r=await fetch(e.request);if(r.ok&&!r.redirected&&!r.headers.get('content-type')?.includes('text/event-stream')){await cache.put(e.request,r.clone());const keys=await cache.keys();if(keys.length>200)await cache.delete(keys[0])}return r}catch{const saved=await cache.match(e.request);return saved||new Response('当前资料尚未缓存，请联网后重试。',{status:503,headers:{'Content-Type':'text/plain;charset=utf-8'}})}})())});

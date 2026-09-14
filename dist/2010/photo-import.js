@@ -35,7 +35,7 @@ function openUpload(){
   try{
    progress.textContent='正在准备文字识别，首次加载可能需要一点时间……';
    if(!globalThis.Tesseract)await new Promise((resolve,reject)=>{const s=document.createElement('script');s.src='vendor/tesseract.min.js';s.onload=resolve;s.onerror=()=>reject(Error('识别组件加载失败，请检查连接后重试'));document.head.appendChild(s)});
-   if(!uploadWorker)uploadWorker=await Tesseract.createWorker('eng',1,{workerPath:new URL('vendor/worker.min.js',location.href).href,corePath:new URL('vendor/',location.href).href,langPath:new URL('vendor',location.href).href,workerBlobURL:false,logger:m=>{const p=$('#uploadProgress');if(p)p.textContent=m.status==='recognizing text'?'识别印刷文字 '+Math.round(m.progress*100)+'%':'正在加载识别组件……'}});
+   if(!uploadWorker)uploadWorker=await Tesseract.createWorker([{code:'eng',data:await loadEnglishData()}],1,{cacheMethod:'none',workerPath:new URL('vendor/worker.min.js',location.href).href,corePath:new URL('vendor/',location.href).href,langPath:new URL('vendor',location.href).href,workerBlobURL:false,logger:m=>{const p=$('#uploadProgress');if(p)p.textContent=m.status==='recognizing text'?'识别印刷文字 '+Math.round(m.progress*100)+'%':'正在加载识别组件……'}});
    await uploadWorker.setParameters({tessedit_pageseg_mode:'3'});
    const {data}=await uploadWorker.recognize(canvas,{}, {text:true,blocks:true});
    const raw=[];for(const block of data.blocks||[])for(const para of block.paragraphs||[])for(const line of para.lines||[])for(const w of line.words||[])if(w.confidence>=20&&w.text.trim())raw.push({text:w.text,x:w.bbox.x0/canvas.width*100,y:w.bbox.y0/canvas.height*100,w:(w.bbox.x1-w.bbox.x0)/canvas.width*100,h:(w.bbox.y1-w.bbox.y0)/canvas.height*100});

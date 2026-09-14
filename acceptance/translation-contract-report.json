@@ -1,0 +1,12 @@
+{
+  "pass": true,
+  "pages": 238,
+  "tasks": 238,
+  "sentences": 4561,
+  "wordPositions": 66820,
+  "pending": 4492,
+  "legacyImported": 69,
+  "realTerraGenerations": 0,
+  "realApiRequests": 0,
+  "rejectedBadFixtures": 6
+}
