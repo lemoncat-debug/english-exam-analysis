@@ -53,7 +53,7 @@
       "sourceTextHash": "f92dcd9a9cf5bc85d4a2bc7ff2ebb7c15d9420523a90203dee62e336d0bc8df0",
       "sentences": 20,
       "wordPositions": 377,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2010-page6-36d491211b78",
@@ -73,7 +73,7 @@
       "sourceTextHash": "a0a24e5170c499d70ce9728477c131fedf53960a154a7aed1b781467eebafbca",
       "sentences": 17,
       "wordPositions": 425,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2010-page8-63ef29f99cba",
@@ -93,7 +93,7 @@
       "sourceTextHash": "5e1f58327f53eeb87e0c9050c0fa4ecd44bbf8993413f05b98a618cc33b04e0a",
       "sentences": 18,
       "wordPositions": 409,
-      "state": "pending"
+      "state": "completed"
     },
     {
       "taskId": "2010-page10-88f1da8f0dc1",
